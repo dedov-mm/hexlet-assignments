@@ -1,6 +1,5 @@
 package exercise;
 
-import exercise.
 // BEGIN
 public class Segment {
     private Point beginPoint;
