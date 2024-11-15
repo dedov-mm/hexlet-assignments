@@ -20,8 +20,7 @@ public class Segment {
     }
 
     public Point getMidPoint() {
-
-        return midPoint(((beginPoint.getX() + beginPoint.getY())/2), ((endPoint.getX() + endPoint.getY())/2);
+        return new Point(((beginPoint.getX() + endPoint.getX()) / 2), ((beginPoint.getY() + endPoint.getY()) / 2));
     }
 }
 // END
