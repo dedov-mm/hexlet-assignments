@@ -25,7 +25,7 @@ public final class App {
         app.get("/companies/{id}", ctx -> {
             var companyNumber = ctx.pathParamAsClass("id", Integer.class);
 
-            if (companyNumber.get() >= COMPANIES.size() || companyNumber.get() < 0) {
+            if (companyNumber.get() > COMPANIES.size() || companyNumber.get() < 0) {
                 throw new NotFoundResponse("Company not found");
             }
 
