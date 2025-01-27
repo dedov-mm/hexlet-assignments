@@ -12,7 +12,7 @@
         @else
             @for(var user : page.getUsers())
                <div>
-                   <h2><a href="/users/${user.getId()}">${user.getFirstName()}</a></h2>
+                   <h2><a href="/users/${user.getId()}">${user.getFirstName() + ", " + user.getLastName()}</a></h2>
                </div>
             @endfor
         @endif
